@@ -1,0 +1,54 @@
+<html>
+
+<head>
+  <title>Form Input Types</title>
+</head>
+
+<body>
+  <h3>Different Input Types of Form</h3>
+  <hr><br>
+  <form class="" action="index.html" method="post">
+    <!--action attribute triggers the action of taking the user to the given URL page after the submit button is clicked in the form -->
+    <label>Name :</label>
+    <input type="text"><br><br>
+    <label>Choose your file :</label>
+    <input type="file"><br><br>
+    <label>Choose your DOB :</label><br>
+    <input type="date"><br><br>
+    <label>Gender:</label><br>
+    <input type="radio" name="gender" id="man">
+    <label for="man">Male</label><br>
+    <input type="radio" name="gender" id="woman">
+    <label for="woman">Female</label><br><br>
+    <label>Select the color of your choice</label>
+    <input type="color"><br><br>
+    <label>Enter the password : </label>
+    <input type="password"><br><br>
+    <a href="RadioButton.html" target="_blank">Refer here for detailed coding of Radio Button example</a><br><br>
+    <p>How did you hear about my site ?</p>
+    <input type="checkbox" id="Email" name="source" value="email">
+    <label for="email">Email</label><br>
+    <input type="checkbox" id="Instagram" name="source" value="Instagram">
+    <label for="Instagram">Instagram</label><br>
+    <input type="checkbox" id="Facebook" name="source" value="Facebook">
+    <label for="Facebook">Facebook</label><br><br><br>
+    <label>E-mail</label>
+    <input type="email"><br>
+    <input type="checkbox" checked>
+    <label>Subscribe to our Newsletters</label><br><br>
+    <!--For a checkbox to be pre-selected,add the word checked within the opening tag of the input element. -->
+    <input type="checkbox" required>
+    <label>I agree to the above terms and conditions.</label><br><br><br>
+    <!--you can code a checkbox to be required.
+That means, the user won’t be able to submit the form until they check the box. -->
+    <label for="Proficiency">Select your proficiency in HTML.</label><br>
+    <input type="range" min="0" max="10" value="5" class="myslider" id="Proficiency"><br><br>
+    <button type="submit">Submit Form</button>
+    <!--This creates submit button directly using input element .
+
+    <input type="submit">-->
+
+  </form>
+</body>
+
+</html>

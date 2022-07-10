@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Radio Button example</title>
+  </head>
+  <body>
+    <form action="mailto:rajs.jain90@gmail.com" method="post" enctype="text/plain">
+    <p>How old are you?</p>
+<input type="radio" id="child" name="age" value="child">
+<label for="child">17 years or younger</label><br>
+<input type="radio" id="adult" name="age" value="adult" checked>
+<!--Radio button inputs have one additional attribute, the checked attribute.
+If included in the <input> tag, the button will be selected by default.-->
+<label for="adult">18 - 64 years</label><br>
+<input type="radio" id="senior" name="age" value="senior">
+<label for="senior">65 years or older</label><br><br>
+<input type="submit">
+</form>
+<!--Here we have three <input> elements of type radio, with some new attributes as well.
+* There’s also a new <label> element for each <input> element.
+Let’s review each thing we added to the code.
+
+*First, the id attribute is a unique identifier for the <input> tag.
+ It can be used as a CSS selector for the radio button element.
+ It also unites the button with its corresponding <label>.
+
+*As mentioned, radio buttons come in groups.
+ Use the required name attribute to group together a set of related radio buttons.
+ In the above example, all <input>s share the same value for name, so they are treated as part of the same group.
+This lets users only choose one option in a group at a time.
+
+*Next, the value attribute represents a unique value for the radio button.
+Users don’t see it, but this is submitted to represent the chosen option.
+For example, if the form above was submitted with the “17 years or younger” item selected, the system processing the form would receive the value age=child.
+If the user does not select any radio button, no value will be sent.
+If the value attribute is missing for the selected option,the form will send the default value on.
+
+*Note that <input> tags only create the radio button element, not the label.
+To label a radio button, add a <label> element after the <input> element and insert a for attribute with the same value as the id of the associated <input> element.
+Then, write your label text in the <label> tag.
+
+*While using <label> isn’t strictly necessary, it’s considered a best practice for two reasons.
+First, the semantically rich <label> element makes your website more accessible for people using screen readers.
+It tells them which label is paired with which radio button.
+Second, the for attribute lets users select a radio button by clicking the label itself in addition to the button, making your form easier to use.-->
+  </body>
+</html>
